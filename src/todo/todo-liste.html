@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>TODO Liste</title>
+</head>
+<body>
+    <h1>TODO Liste</h1>
+
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Neue Aufgabe hinzufügen">
+        <button type="submit">Hinzufügen</button>
+    </form>
+
+    <ul id="todo-list">
+        <!-- TODO items will be inserted here dynamically -->
+    </ul>
+    <!--NEW-->
+    <form id="todo-update-form" style="display: none;">
+        <input type="hidden" id="todo-id">
+        <input type="hidden" id="todo-completed"> <!-- NEU -->
+        <input type="text" id="todo-update-input">
+        <button type="submit">Update</button>
+    </form>
+
+    <script src="todo.js"></script>
+</body>
+</html>
+ 
